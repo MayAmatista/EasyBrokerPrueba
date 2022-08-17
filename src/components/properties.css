@@ -1,0 +1,14 @@
+
+.properties-list{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    margin: 12vw;
+    gap: 15 px;
+}
+
+.property-main{
+    font-size: 0.8em;
+    position: relative;
+    margin:2%
+}

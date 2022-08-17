@@ -1,0 +1,13 @@
+###
+GET http://localhost:3000/property/EB-C0156 HTTP/1.1
+
+Content-Type: application/json; charset=UTF-8
+
+{}
+
+###
+GET http://localhost:3000/properties?page=1 HTTP/1.1
+
+Content-Type: application/json; charset=UTF-8
+
+{}

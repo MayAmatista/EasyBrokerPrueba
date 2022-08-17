@@ -1,0 +1,128 @@
+{
+    "pagination": {
+      "limit": 20,
+      "page": 1,
+      "total": 4
+    },
+    "content": [
+      {
+        "public_id": "EB-B5339",
+        "title": "Locales en Venta Amadeus Calzada del Valle",
+        "title_image_full": "https://assets.stagingeb.com/property_images/25339/49442/EB-B5339.jpg?version=1555543334",
+        "title_image_thumb": "https://assets.stagingeb.com/property_images/25339/49442/EB-B5339_thumb.jpg?version=1555543334",
+        "location": "Del Valle, San Pedro Garza García, Nuevo León",
+        "operations": [
+          {
+            "type": "sale",
+            "amount": 5954400,
+            "currency": "MXN",
+            "formatted_amount": "$5,954,400",
+            "commission": {
+              "type": "percentage"
+            },
+            "unit": "total"
+          }
+        ],
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "parking_spaces": 114,
+        "property_type": "Local en centro comercial",
+        "lot_size": 0,
+        "construction_size": 49,
+        "updated_at": "2020-12-14T17:07:37-06:00",
+        "agent": "Alejandro Blanco Zivec",
+        "show_prices": true,
+        "share_commission": false
+      },
+      {
+        "public_id": "EB-B5357",
+        "title": "Locales Comerciales en Venta Vasconcelos San Pedro Garza Garcia",
+        "title_image_full": "https://assets.stagingeb.com/property_images/25357/49606/EB-B5357.jpg?version=1601049752",
+        "title_image_thumb": "https://assets.stagingeb.com/property_images/25357/49606/EB-B5357_thumb.jpg?version=1601049752",
+        "location": "Valle de Vasconcelos, San Pedro Garza García, Nuevo León",
+        "operations": [
+          {
+            "type": "sale",
+            "amount": 2945600,
+            "currency": "MXN",
+            "formatted_amount": "$2,945,600",
+            "commission": {
+              "type": "percentage"
+            },
+            "unit": "total"
+          }
+        ],
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "parking_spaces": 154,
+        "property_type": "Local en centro comercial",
+        "lot_size": 0,
+        "construction_size": 36,
+        "updated_at": "2020-12-14T17:07:37-06:00",
+        "agent": "Alejandro Blanco Zivec",
+        "show_prices": true,
+        "share_commission": false
+      },
+      {
+        "public_id": "EB-B5372",
+        "title": "Local en Renta Plaza Villas Valle San Pedro Garza Garcia",
+        "title_image_full": "https://assets.stagingeb.com/property_images/25372/49729/EB-B5372.jpg?version=1555543525",
+        "title_image_thumb": "https://assets.stagingeb.com/property_images/25372/49729/EB-B5372_thumb.jpg?version=1555543525",
+        "location": "Del Valle, San Pedro Garza García, Nuevo León",
+        "operations": [
+          {
+            "type": "rental",
+            "amount": 400,
+            "currency": "MXN",
+            "formatted_amount": "$400",
+            "commission": {
+              "type": "percentage"
+            },
+            "unit": "total"
+          }
+        ],
+        "bedrooms": 0,
+        "bathrooms": 0,
+        "parking_spaces": 0,
+        "property_type": "Local comercial",
+        "lot_size": 0,
+        "construction_size": 1,
+        "updated_at": "2020-12-14T17:07:38-06:00",
+        "agent": "Alejandro Blanco Zivec",
+        "show_prices": true,
+        "share_commission": false
+      },
+      {
+        "public_id": "EB-B5387",
+        "title": "Oficinas en Venta en Valle Oriente",
+        "title_image_full": "https://assets.stagingeb.com/property_images/25387/49925/EB-B5387.jpg?version=1555543660",
+        "title_image_thumb": "https://assets.stagingeb.com/property_images/25387/49925/EB-B5387_thumb.jpg?version=1555543660",
+        "location": "Hacienda de La Sierra, San Pedro Garza García, Nuevo León",
+        "operations": [
+          {
+            "type": "sale",
+            "amount": 67000,
+            "currency": "MXN",
+            "formatted_amount": "$67,000",
+            "commission": {
+              "type": "percentage"
+            },
+            "unit": "total"
+          }
+        ],
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "parking_spaces": 0,
+        "property_type": "Oficina",
+        "lot_size": 0,
+        "construction_size": 0,
+        "updated_at": "2020-12-14T17:07:38-06:00",
+        "agent": "Alejandro Blanco Zivec",
+        "show_prices": true,
+        "share_commission": false
+      }
+    ]
+  }
+  
+  
+  
