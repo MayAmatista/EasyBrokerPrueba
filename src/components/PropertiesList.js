@@ -1,6 +1,7 @@
 import React from 'react';
 import './properties.css';
-
+import { Property } from './Property';
+import {BrowserRouter as Router,Switch,Route,Link,useParams} from "react-router-dom";
 class PropertiesList extends React.Component {
   constructor(props) {
     super(props)
@@ -30,24 +31,26 @@ class PropertiesList extends React.Component {
 
   render() {
     const propertiesElements = this.state.properties.map(property => (
-      <PropertyMain key={property.public_id} value={property}> </PropertyMain>
+      <PropertiesListItem key={property.public_id} value={property}> </PropertiesListItem>
     ))
     return (
       <div className='properties-list' >
          {propertiesElements}
       </div>
     );
-
   }
 }
+class PropertiesListItem extends React.Component {
 
-class PropertyMain extends React.Component {
+  redirect(){
 
+    <Property id= {this.props.value.public_id}></Property>
+  }
   render() {
       const altText = `Imagen de ${this.props.value.title}`;
   
       return (
-          <article className = 'property-main'>
+          <article onClick={() => this.redirect()} className = 'property-main'>
               <h2>{this.props.value.title} </h2>
               <img src={this.props.value.title_image_thumb} alt={altText} />
               <h3>Ubicación: <br/>
@@ -56,6 +59,6 @@ class PropertyMain extends React.Component {
           </article>
           );
       }
-  }
+}
 
-export default PropertiesList 
+export default PropertiesList

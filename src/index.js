@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom/client';
 import PropertiesList from './components/PropertiesList';
 import Footer from './components/Footer'
 import './index.css';
-
-
-
 class App extends React.Component{
   constructor(props){
     super(props);
@@ -30,10 +27,7 @@ class App extends React.Component{
   }
 }
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <App></App>
 );
-
-
