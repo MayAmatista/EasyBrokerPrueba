@@ -1,14 +1,26 @@
 
 .properties-list{
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    margin: 12vw;
-    gap: 15 px;
+    text-align:center;
+    width:100%;
+    border: 1px solid #999;
+    margin: 25px 0; 
+    margin-top: 50px;
+    padding: 6px 15px 0; 
 }
 
-.property-main{
-    font-size: 0.8em;
-    position: relative;
-    margin:2%
+.property-list-item{
+    background-color: #eee; 
+    display:block;
+    padding:6px 15px;
+    margin-top: 10px;
+}
+
+.footer{
+    display: inline-block;
+    text-align:center;
+    width:100%;
+    border: 1px solid #999;
+    margin: 25px 0; 
+    margin-top: 50px;
+    padding: 6px 15px 0; 
 }

@@ -1,17 +1,21 @@
 import React from "react";
-import { ContanctForm } from "./ContactForm";
+import { useParams } from "react-router-dom";
+import {ContanctForm} from "./ContactForm"
+import './property.css'
 
+function withParams(Property) {
+    return props => <Property {...props} params={useParams()}/>
+}
 class Property extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-          property: null,
+          property: {},
         }
     }
-    //use params
 
-    getProperty() {
-        const url = `https://api.stagingeb.com/v1/properties/${this.props.id}`
+  componentDidMount() {
+        const url = `http://localhost:3000/property/${this.props.params.id}`
 
         fetch(url)
             .then(response => response.json())
@@ -23,16 +27,13 @@ class Property extends React.Component {
 
         return(
             <div>
-                <h2>{this.state.public_id}</h2>
-                <h2>{this.state.title}</h2>
-                <h4>{this.state.description}</h4>
-                <h4>imagenes</h4>
-                <h4>{this.state.description.property_type}</h4>
-                <h4>{this.state.location}</h4>
+                <h2>ID de la publicación: {this.state.property.public_id}</h2>
+                <h2>{this.state.property.title}</h2> <br></br>
+                <h4>Descripción: {this.state.property.description}</h4>
                 <ContanctForm></ContanctForm>
             </div>
         )
     }
 }
 
-export { Property }
+export default withParams(Property);
