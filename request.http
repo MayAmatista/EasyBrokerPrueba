@@ -11,3 +11,13 @@ GET http://localhost:3000/properties?page=1 HTTP/1.1
 Content-Type: application/json; charset=UTF-8
 
 {}
+
+###
+POST  'http://localhost:3000/contact' HTTP/1.1
+
+Content-Type: application/json; charset=UTF-8
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}

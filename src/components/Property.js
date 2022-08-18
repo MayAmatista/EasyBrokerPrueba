@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import {ContanctForm} from "./ContactForm"
+import { ContactForm } from "./ContactForm"
+import { ImageSlider } from "./ImageSlider";
+
 import './property.css'
 
 function withParams(Property) {
@@ -10,7 +12,7 @@ class Property extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-          property: {},
+          property: null,
         }
     }
 
@@ -24,15 +26,16 @@ class Property extends React.Component {
     }
 
     render(){
-
-        return(
-            <div>
+        return this.state.property !== null ?
+        (
+            <div className = 'property'>
                 <h2>ID de la publicación: {this.state.property.public_id}</h2>
+                <ImageSlider className='image-slider' images= {this.state.property.property_images}></ImageSlider>
                 <h2>{this.state.property.title}</h2> <br></br>
                 <h4>Descripción: {this.state.property.description}</h4>
-                <ContanctForm></ContanctForm>
+                <ContactForm></ContactForm>
             </div>
-        )
+        ) : (<div>Cargando...</div>)
     }
 }
 
