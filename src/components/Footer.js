@@ -1,9 +1,5 @@
 import React from 'react';
 class Footer extends React.Component {
-    constructor(props) {
-        super(props);
-        console.log(props)
-    }
 
     previous() {
         let currentPage = this.props.page === 1 ? 1 : this.props.page - 1;

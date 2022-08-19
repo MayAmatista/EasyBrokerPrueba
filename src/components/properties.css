@@ -13,6 +13,8 @@
     display:block;
     padding:6px 15px;
     margin-top: 10px;
+    text-decoration:none;
+    color: #808080;
 }
 
 .footer{

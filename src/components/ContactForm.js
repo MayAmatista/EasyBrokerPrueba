@@ -1,33 +1,54 @@
 import React from "react"
 
 
-const ContactForm = () => {
+const ContactForm = (props) => {
+    function handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
 
-        return (
-            <form id="contact" action="" method="post">
-                <h3>Deje su mensaje</h3>
-                <h4>Contáctese con nosotros</h4>
-                <fieldset>
-                    <input placeholder="Nombre" type="text" required/>
-                </fieldset>
+        const value = Object.fromEntries(data.entries());
+        value.property_id = props.propertyId;
 
-                <fieldset>
-                    <input placeholder="Número de teléfono" type="tel"  required/>
-                </fieldset>
-
-                <fieldset>
-                    <input placeholder="Email" type="email" required/>
-                </fieldset>
-            
-                <fieldset>
-                    <textarea placeholder="Escriba su mensaje aquí...." required></textarea>
-                </fieldset>
-                <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
-                </fieldset>
-            </form>
-        )
+        fetch('http://localhost:3000/contact', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(value)
+        })
+        .then(() => window.alert("Formulario enviado exitosamente"))
     }
 
+    return (
+        <form id="contact" onSubmit={handleSubmit}>
+            <h3>Deje su mensaje</h3>
+            <h4>Contáctese con nosotros</h4>
+            <fieldset>
+                <input id="name" placeholder="Nombre" type="text" name="name" required />
+            </fieldset>
+
+            <fieldset>
+                <input id="phone" placeholder="Número de teléfono" type="tel" name="phone" required/>
+            </fieldset>
+
+            <fieldset>
+                <input id="email" placeholder="Email" type="email" name="email" required />
+            </fieldset>
+
+            <fieldset>
+                <textarea id="message" placeholder="Escriba su mensaje aquí...." name="message" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <input id="source" placeholder="Fuente de contacto" type="text" name="source" required />
+            </fieldset>
+
+            <fieldset>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    )
+}
 
 export { ContactForm }
