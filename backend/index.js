@@ -13,7 +13,7 @@ const API_KEY = process.env.API_KEY;
 
 app.get('/property/:public_id', (req, res) => {
     let options = {
-        url: 'https://api.stagingeb.com/v1/properties/' + req.params.public_id,
+        url: `https://api.stagingeb.com/v1/properties/${req.params.public_id}`,
         method: 'GET',
         json: true,
         headers: {
@@ -27,7 +27,7 @@ app.get('/property/:public_id', (req, res) => {
 
 app.get('/properties', (req, res) => {
     let options = {
-        url: 'https://api.stagingeb.com/v1/properties?page=' + req.query.page + '&limit=15&search%5Bstatuses%5D%5B%5D=published',
+        url: `https://api.stagingeb.com/v1/properties?page=${req.query.page}&limit=15&search%5Bstatuses%5D%5B%5D=published`,
         method: 'GET',
         json: true,
         headers: {

@@ -1,11 +1,10 @@
 import React from "react"
 
-
 const ContactForm = (props) => {
+
     function handleSubmit(event) {
         event.preventDefault();
         const data = new FormData(event.target);
-
         const value = Object.fromEntries(data.entries());
         value.property_id = props.propertyId;
 
@@ -24,12 +23,13 @@ const ContactForm = (props) => {
         <form id="contact" onSubmit={handleSubmit}>
             <h3>Deje su mensaje</h3>
             <h4>Contáctese con nosotros</h4>
+
             <fieldset>
                 <input id="name" placeholder="Nombre" type="text" name="name" required />
             </fieldset>
 
             <fieldset>
-                <input id="phone" placeholder="Número de teléfono" type="tel" name="phone" required/>
+                <input id="phone" placeholder="Número de teléfono" type="tel" name="phone" required />
             </fieldset>
 
             <fieldset>

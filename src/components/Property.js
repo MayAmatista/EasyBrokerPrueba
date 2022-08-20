@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { ContactForm } from "./ContactForm"
 import { ImageSlider } from "./ImageSlider";
 import { Link } from "react-router-dom";
-
 import './property.css'
 
 function withParams(Property) {
@@ -32,8 +31,8 @@ class Property extends React.Component {
             <div className = 'property'>
                 <Link to= '/'> Volver </Link>
                 <h2>ID de la publicación: {this.state.property.public_id}</h2>
-                <ImageSlider className='image-slider' images= {this.state.property.property_images}></ImageSlider>
-                <h2>{this.state.property.title}</h2> <br></br>
+                <ImageSlider images= {this.state.property.property_images}></ImageSlider>
+                <h2>{this.state.property.title}</h2> <br/>
                 <h4>Descripción: {this.state.property.description}</h4>
                 <ContactForm propertyId = {this.state.property.public_id}></ContactForm>
             </div>

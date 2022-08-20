@@ -47,10 +47,9 @@ class PropertiesListItem extends React.Component {
     return (
       <div>
         <Link className='property-list-item' to={this.props.value.public_id} >
-          <h2>{this.props.value.title} </h2>
+          <h2> {this.props.value.title} </h2>
           <img src={this.props.value.title_image_thumb} alt={altText} />
-          <h3>Ubicación: <br />
-            {this.props.value.location} {this.props.value.property_type} </h3>
+          <h3> {this.props.value.location} {this.props.value.property_type} </h3>
           <h4> Propiedad: {this.props.value.public_id} </h4>
         </Link>
       </div>

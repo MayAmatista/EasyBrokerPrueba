@@ -11,8 +11,9 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div>
-          <header></header>
-          
+          <header>
+            <title>Easy Broker</title>
+          </header>
         </div>
         <Routes>
           <Route exact path="/:id" element={<Property/>}></Route>
@@ -47,6 +48,4 @@ class Home extends React.Component{
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <App></App>
-);
+root.render(<App/>);
