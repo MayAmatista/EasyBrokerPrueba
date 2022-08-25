@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import PropertiesList from './components/PropertiesList';
-import Footer from './components/Footer'
+import Pagination from './components/Pagination'
 import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Property from './components/Property'
@@ -38,10 +38,10 @@ class Home extends React.Component{
 
   render() {
     return(
-        <div>
+        <div className='home'>
           <h1>Easy Broker</h1>
           <PropertiesList page={this.state.page}></PropertiesList>
-          <Footer className='footer' page={this.state.page} onChange={(page) => this.changePage(page)}></Footer>
+          <Pagination page={this.state.page} onChange={(page) => this.changePage(page)}></Pagination>
         </div>
     )
   }

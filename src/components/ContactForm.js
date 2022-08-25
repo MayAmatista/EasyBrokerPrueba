@@ -29,23 +29,23 @@ const ContactForm = (props) => {
             </fieldset>
 
             <fieldset>
-                <input id="phone" placeholder="Número de teléfono" type="tel" name="phone" required />
+                <input data-testid = "phone" id="phone" placeholder="Número de teléfono" type="tel" name="phone" required />
             </fieldset>
 
             <fieldset>
-                <input id="email" placeholder="Email" type="email" name="email" required />
+                <input data-testid = "email" id="email" placeholder="Email" type="email" name="email" required />
             </fieldset>
 
             <fieldset>
-                <textarea id="message" placeholder="Escriba su mensaje aquí...." name="message" required></textarea>
+                <textarea  data-testid = "message" id="message" placeholder="Escriba su mensaje aquí...." name="message" required></textarea>
             </fieldset>
 
             <fieldset>
-                <input id="source" placeholder="Fuente de contacto" type="text" name="source" required />
+                <input data-testid = "source" id="source" placeholder="Fuente de contacto" type="text" name="source" required />
             </fieldset>
 
             <fieldset>
-                <button type="submit">Enviar</button>
+                <button type="submit" name="submit">Enviar</button>
             </fieldset>
         </form>
     )
