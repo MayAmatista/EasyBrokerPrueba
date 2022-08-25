@@ -7,6 +7,12 @@ Para poner la aplicación en marcha ejecute los siguientes comandos en una conso
  `npm runGetUp`
 
  `npm start`
+ 
+ Para poder ejecutar los test:
+ 
+ `npm run test-server`
+ 
+ `npm run test`
 
 ## Notas
 
