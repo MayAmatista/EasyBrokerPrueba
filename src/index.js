@@ -12,7 +12,7 @@ class App extends React.Component {
       <BrowserRouter>
         <div>
           <header>
-            <title>Easy Broker</title>
+            <title>EASY BROKER</title>
           </header>
         </div>
         <Routes>
@@ -39,7 +39,7 @@ class Home extends React.Component{
   render() {
     return(
         <div className='home'>
-          <h1>Easy Broker</h1>
+          <h1>EASY BROKER</h1>
           <PropertiesList page={this.state.page}></PropertiesList>
           <Pagination page={this.state.page} onChange={(page) => this.changePage(page)}></Pagination>
         </div>

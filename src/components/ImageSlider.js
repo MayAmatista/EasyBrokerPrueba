@@ -19,8 +19,8 @@ function ImageSlider(props) {
 
     return (
         <div className="slider">
-            {images[index]}
             <button className='slider-button' id='button-previous' onClick={previous}> {'<'} </button>
+            {images[index]}
             <button className='slider-button' id='button-next' onClick={next}> {'>'} </button>
         </div>
     )

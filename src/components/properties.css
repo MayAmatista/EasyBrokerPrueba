@@ -1,19 +1,30 @@
+
+
 .properties-list{
-    position: relative;
-    text-align:center;
-    width:100%;
-    border: 1px solid #999;
-    margin: 25px 0; 
-    margin-top: 50px;
-    padding: 6px 15px 0; 
+    display: grid;
+    flex-direction: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 10px;
 }
 
 .property-list-item{
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
     background-color: #eee; 
     display:block;
-    padding:6px 15px;
-    margin-top: 10px;
     text-decoration:none;
     color: #808080;
+    height:400px;
 }
 
+
+.property-list-item:hover{
+    background-color: #e9caae; 
+    text-decoration:none;
+    color: #658f86;;
+    transform: scale(0.9);   
+    transition: 0.3s;
+}

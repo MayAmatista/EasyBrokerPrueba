@@ -18,8 +18,8 @@ body {
 	font-weight:300;
 	font-size: 15px;
 	line-height:30px;
-	color:rgb(12, 12, 12);
-	background:#48aaff;
+	color: #405b54;
+	background:#EEE6DB;
 }
 
 h2{
@@ -37,11 +37,39 @@ h2{
     padding-left: 10px;
 }
 
+.back{
+	padding: 10px;
+	text-decoration: none;
+	color: #405b54;
+	background-color: #e9caae;
+	border-radius: 10px;
+}
+
+.back:hover{
+	font-weight: bold;
+	font-size: 15px;
+}
 .image-slider{
 	margin:auto;
 	display: block;
 	object-fit: cover;
 	object-position: 50% 50%;
+	width: 50vw;
+}
+
+
+.slider-button{
+	background-color: #EEE6DB;
+	margin: 10vh;
+	border: none;
+	width: 20px;
+	color:#405b54;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.description{
+	margin: 15px;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
@@ -53,7 +81,7 @@ h2{
 }
 
 #contact h3 {
-	color: #F96;
+	color: #405b54;
 	display: block;
 	font-size: 30px;
 	font-weight: 400;
@@ -98,7 +126,7 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#48aaff;
+	background:#405b54;
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -106,7 +134,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-	background:#48aaff;
+	background:#405b54;
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;

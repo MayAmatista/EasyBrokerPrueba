@@ -29,11 +29,11 @@ class Property extends React.Component {
         return this.state.property !== null ?
         (
             <div className = 'property'>
-                <Link to= '/'> Volver </Link>
+                <Link className="back" to= '/'> Volver </Link>
                 <h2>ID de la publicación: {this.state.property.public_id}</h2>
                 <ImageSlider images= {this.state.property.property_images}></ImageSlider>
                 <h2>{this.state.property.title}</h2> <br/>
-                <h4>Descripción: {this.state.property.description}</h4>
+                <h4 className="description">Descripción: {this.state.property.description}</h4>
                 <ContactForm propertyId = {this.state.property.public_id}></ContactForm>
             </div>
         ) : (<div>Cargando...</div>)
