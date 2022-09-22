@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/EasyBrokerPrueba/static/css/main.b4a562a6.css",
+    "main.js": "/EasyBrokerPrueba/static/js/main.9b4d56fc.js",
+    "index.html": "/EasyBrokerPrueba/index.html",
+    "main.b4a562a6.css.map": "/EasyBrokerPrueba/static/css/main.b4a562a6.css.map",
+    "main.9b4d56fc.js.map": "/EasyBrokerPrueba/static/js/main.9b4d56fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4a562a6.css",
+    "static/js/main.9b4d56fc.js"
+  ]
+}
